@@ -13,6 +13,6 @@ jobs:
     - name: Building the explorer
       run: |
         docker build . --file Dockerfile --compress --tag chaincrucial/cardano-explorer:latest
-    - name: container push stage 1
+    - name: container push chaincrucial/cardano-explorer:latest
       run: |
         docker push chaincrucial/cardano-explorer:latest
